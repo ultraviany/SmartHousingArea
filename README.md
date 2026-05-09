@@ -27,18 +27,16 @@ XAMPP (untuk MySQL & Apache): Download XAMPP
 Langkah Instalasi 
 --------------------
 1. Clone Repository buka terminal atau Git Bash, lalu jalankan perintah berikut:
---------------------------------------------------------
+
 git clone https://github.com/ultraviany/SmartHousingArea
---------------------------------------------------------
+
 cd SmartHousingArea
--------------------
 
 2. Istalasi Backend (Laravel)Masuk ke folder backend:
-----------
+
 cd backend
---------------------------------------
+
 composer install --ignore-platform-reqs
----------------------------------------
 
 Konfigurasi Environment (.env):  Salin file .env.example menjadi .env 
 Buka file .env dan sesuaikan konfigurasi database berikut:  
