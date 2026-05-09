@@ -130,12 +130,17 @@ Residents: Informasi lengkap penghuni termasuk Foto KTP dan Status Huni.
 Payments: Pencatatan transaksi iuran warga (Satpam & Kebersihan).
 
 Expenses: Pencatatan pengeluaran operasional kas RT.
+<img width="1280" height="800" alt="Screenshot 2026-05-08 at 17 17 49" src="https://github.com/user-attachments/assets/15ae2eef-d741-4179-b6fd-8a532d9a7ea9" />
 
-[9] Rangkuman Fitur (Screenshot)
 
+Rangkuman Fitur (Screenshot)
+-
 Sesuai dengan dokumentasi pada presentasi, aplikasi ini memiliki fitur utama:
 
-Halaman Login & Register: Autentikasi aman untuk admin.
+Halaman Login & Register: Autentikasi ntuk admin.
+<img width="1280" height="656" alt="Screenshot 2026-05-09 at 12 42 59" src="https://github.com/user-attachments/assets/e53845f7-72da-41b2-a15e-b0d7774d0849" />
+<img width="1280" height="656" alt="Screenshot 2026-05-09 at 12 35 02" src="https://github.com/user-attachments/assets/39e7d75d-e40c-4ac7-bfc5-aad489bd4860" />
+
 
 Dashboard Utama: Statistik real-time total rumah, hunian, dan saldo kas.
 
