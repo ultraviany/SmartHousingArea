@@ -130,7 +130,8 @@ Residents: Informasi lengkap penghuni termasuk Foto KTP dan Status Huni.
 Payments: Pencatatan transaksi iuran warga (Satpam & Kebersihan).
 
 Expenses: Pencatatan pengeluaran operasional kas RT.
-<img width="1280" height="800" alt="Screenshot 2026-05-08 at 17 17 49" src="https://github.com/user-attachments/assets/15ae2eef-d741-4179-b6fd-8a532d9a7ea9" />
+<img width="1280" height="694" alt="Screenshot 2026-05-09 at 12 44 32" src="https://github.com/user-attachments/assets/a7f7ceba-3a18-4130-a5b1-9e9e701ab111" />
+
 
 
 Rangkuman Fitur (Screenshot)
@@ -138,14 +139,37 @@ Rangkuman Fitur (Screenshot)
 Sesuai dengan dokumentasi pada presentasi, aplikasi ini memiliki fitur utama:
 
 Halaman Login & Register: Autentikasi ntuk admin.
+-
 <img width="1280" height="656" alt="Screenshot 2026-05-09 at 12 42 59" src="https://github.com/user-attachments/assets/e53845f7-72da-41b2-a15e-b0d7774d0849" />
 <img width="1280" height="656" alt="Screenshot 2026-05-09 at 12 35 02" src="https://github.com/user-attachments/assets/39e7d75d-e40c-4ac7-bfc5-aad489bd4860" />
 
 
 Dashboard Utama: Statistik real-time total rumah, hunian, dan saldo kas.
+-
+<img width="1280" height="648" alt="Screenshot 2026-05-09 at 12 46 43" src="https://github.com/user-attachments/assets/1de0d316-3186-4632-a669-8ca752a4f048" />
+
 
 Manajemen Warga: Pendataan penduduk tetap maupun kontrak.
+-
+<img width="1280" height="648" alt="Screenshot 2026-05-09 at 12 47 25" src="https://github.com/user-attachments/assets/b0eae352-c0e3-4af0-879b-ba5085319169" />
 
-Manajemen Iuran: Laporan pembayaran warga yang transparan.
+Manajemen Rumah: Data rumah dan detail informasi mengenai rumah
+-
+<img width="1280" height="653" alt="Screenshot 2026-05-09 at 12 48 18" src="https://github.com/user-attachments/assets/4c9985b5-9d9d-42d4-9d7d-3465c4e22186" />
+
+Manajemen Pemasukan Kas: Laporan pembayaran warga secara transparan.
+-
+<img width="1280" height="647" alt="Screenshot 2026-05-09 at 12 50 10" src="https://github.com/user-attachments/assets/06c6726c-80af-4261-9df2-f719b8cc69d0" />
+
+Manajemen Pengeluaran Kas: Laporan pengeluaran secara transparan.
+-
+<img width="1280" height="657" alt="Screenshot 2026-05-09 at 12 51 02" src="https://github.com/user-attachments/assets/8969c376-be02-4df3-a0ca-335437bbb817" />
+
+Laporan Keuangan
+-
+<img width="1280" height="649" alt="Screenshot 2026-05-09 at 12 52 59" src="https://github.com/user-attachments/assets/5faef5dc-84c5-40e0-aa4b-056c6c5c3f2a" />
+<img width="1280" height="650" alt="Screenshot 2026-05-09 at 12 53 13" src="https://github.com/user-attachments/assets/3b58f20c-4dc7-4c11-9fa0-72ab5d4ce4de" />
+
+
 
 Dokumentasi Lengkap: https://canva.link/un6g44ogjpfmhw9
