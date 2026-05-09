@@ -23,9 +23,9 @@ Langkah 5: Menjalankan Aplikasi
 Struktur Database (ERD)
 
 Rangkuman Fitur (Screenshot)
-
-[2] Prasyarat Sistem (Link Download)
-
+-
+Prasyarat Sistem (Link Download)
+-
 Sebelum memulai instalasi, pastikan perangkat Anda sudah terinstall aplikasi berikut:
 
 Git: https://git-scm.com/install/windows
