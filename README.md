@@ -50,6 +50,7 @@ Langkah 2: Instalasi Backend (Laravel)
 Pindah ke folder backend untuk menginstall semua library yang dibutuhkan:
 
 cd backend
+
 composer install --ignore-platform-reqs
 
 
@@ -90,6 +91,7 @@ Langkah 4: Instalasi Frontend (React + Vite)
 Buka terminal baru (tetap di folder utama project), lalu masuk ke folder frontend:
 
 cd frontend
+
 npm install
 
 
