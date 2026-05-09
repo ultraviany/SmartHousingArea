@@ -38,10 +38,10 @@ XAMPP: https://www.apachefriends.org/download (Untuk MySQL)
 
 Langkah 1: Pengambilan Code (Clone)
 -
-Buka terminal atau Command Prompt (CMD), lalu jalankan perintah berikut
+Buka terminal atau Command Prompt (CMD), lalu jalankan perintah berikut:
 
-Terminal Command:
 git clone [https://github.com/ultraviany/SmartHousingArea](https://github.com/ultraviany/SmartHousingArea)
+
 cd SmartHousingArea
 
 
