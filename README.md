@@ -1,12 +1,12 @@
-🏠 Smart Housing Area - Sistem Administrasi RT Modern
+Smart Housing Area - Sistem Administrasi Perumahan Modern
 
 Project by: Ultra Viany
 
 Email: ultravia914@gmail.com
 
-Dokumentasi Visual: Lihat Presentasi di Canva
+Dokumentasi Visual: https://canva.link/un6g44ogjpfmhw9
 
-📌 Daftar Isi
+[1] Daftar Isi
 
 Prasyarat Sistem (Link Download)
 
@@ -24,19 +24,19 @@ Struktur Database (ERD)
 
 Rangkuman Fitur (Screenshot)
 
-💻 Prasyarat Sistem (Link Download)
+[2] Prasyarat Sistem (Link Download)
 
 Sebelum memulai instalasi, pastikan perangkat Anda sudah terinstall aplikasi berikut:
 
-🛠️ Git: Download Git
+Git: https://git-scm.com/install/windows
 
-🐘 Composer: Download Composer
+Composer: https://getcomposer.org/Composer-Setup.exe
 
-🟢 Node.js: Download Node.js
+Node.js: https://nodejs.org/en/download
 
-🧡 XAMPP: Download XAMPP (Untuk MySQL)
+XAMPP: https://www.apachefriends.org/download (Untuk MySQL)
 
-📂 Langkah 1: Pengambilan Code (Clone)
+[3] Langkah 1: Pengambilan Code (Clone)
 
 Buka terminal atau Command Prompt (CMD), lalu jalankan perintah berikut:
 
@@ -44,7 +44,7 @@ git clone [https://github.com/ultraviany/SmartHousingArea](https://github.com/ul
 cd SmartHousingArea
 
 
-⚙️ Langkah 2: Instalasi Backend (Laravel)
+[4] Langkah 2: Instalasi Backend (Laravel)
 
 Pindah ke folder backend untuk menginstall semua library yang dibutuhkan:
 
@@ -54,7 +54,7 @@ composer install --ignore-platform-reqs
 
 Pengaturan File .env:
 
-Salin file .env.example dan ubah namanya menjadi .env.
+Salin file .env.example dan ubah namanya menjadi .env
 
 Buka file .env dan sesuaikan pengaturan database Anda:
 
@@ -71,7 +71,7 @@ Generate Key Aplikasi:
 php artisan key:generate
 
 
-🗄️ Langkah 3: Konfigurasi Database & Migrasi
+[5] Langkah 3: Konfigurasi Database & Migrasi
 
 Jalankan XAMPP dan aktifkan modul Apache dan MySQL.
 
@@ -84,7 +84,7 @@ Kembali ke terminal (masih di folder backend), jalankan perintah migrasi:
 php artisan migrate:fresh
 
 
-🎨 Langkah 4: Instalasi Frontend (React + Vite)
+[6] Langkah 4: Instalasi Frontend (React + Vite)
 
 Buka terminal baru (tetap di folder utama project), lalu masuk ke folder frontend:
 
@@ -92,14 +92,14 @@ cd frontend
 npm install
 
 
-💡 Tips Khusus macOS:
+Catatan Khusus macOS:
 Jika muncul error perizinan (permission), jalankan perintah berikut:
 
 sudo xattr -rd com.apple.quarantine .
 chmod -R +x node_modules/.bin/
 
 
-🚀 Langkah 5: Menjalankan Aplikasi
+[7] Langkah 5: Menjalankan Aplikasi
 
 Buka dua terminal berbeda untuk menjalankan backend dan frontend secara bersamaan:
 
@@ -117,7 +117,7 @@ npm run dev
 
 Aplikasi frontend berjalan di: http://localhost:5173
 
-📊 Struktur Database (ERD)
+[8] Struktur Database (ERD)
 
 Sistem ini dirancang dengan struktur data yang mencakup:
 
@@ -131,7 +131,7 @@ Payments: Pencatatan transaksi iuran warga (Satpam & Kebersihan).
 
 Expenses: Pencatatan pengeluaran operasional kas RT.
 
-📸 Rangkuman Fitur (Screenshot)
+[9] Rangkuman Fitur (Screenshot)
 
 Sesuai dengan dokumentasi pada presentasi, aplikasi ini memiliki fitur utama:
 
@@ -143,4 +143,4 @@ Manajemen Warga: Pendataan penduduk tetap maupun kontrak.
 
 Manajemen Iuran: Laporan pembayaran warga yang transparan.
 
-Dokumentasi Lengkap: Presentasi Proyek di Canva
+Dokumentasi Lengkap: https://canva.link/un6g44ogjpfmhw9
