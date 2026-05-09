@@ -29,14 +29,20 @@ Langkah Instalasi
 1. Clone Repository buka terminal atau Git Bash, lalu jalankan perintah berikut:
 
 git clone https://github.com/ultraviany/SmartHousingArea
+
 cd SmartHousingArea
 
 2. Istalasi Backend (Laravel)Masuk ke folder backend:
 
 cd backend
+
 composer install --ignore-platform-reqs
 
-Konfigurasi Environment (.env):  Salin file .env.example menjadi .env 
+Konfigurasi Environment (.env):  
+
+Salin file .env.example menjadi 
+.env 
+
 Buka file .env dan sesuaikan konfigurasi database berikut:  
 
 DB_CONNECTION=mysql
@@ -48,6 +54,7 @@ DB_PASSWORD=
 
 
 Generate kunci aplikasi: 
+
 php artisan key:generate
 
 
@@ -62,6 +69,7 @@ Catatan: Jika terjadi error "index length", atur limit panjang data pada app/Pro
 4. Instalasi Frontend (React + Vite)Buka terminal baru, masuk ke folder frontend:
    
 cd frontend
+
 npm install
 
 
