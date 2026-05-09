@@ -128,6 +128,8 @@ Users: Pengelolaan akun Administrator.
 
 Houses: Data nomor rumah dan status hunian (Dihuni/Kosong).
 
+House Histories: Tabel riwayat untuk mencatat historis penghuni pada setiap rumah. 
+
 Residents: Informasi lengkap penghuni termasuk Foto KTP dan Status Huni.
 
 Payments: Pencatatan transaksi iuran warga (Satpam & Kebersihan).
