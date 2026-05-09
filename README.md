@@ -147,7 +147,7 @@ Halaman Login & Register: Autentikasi ntuk admin.
 <img width="1280" height="656" alt="Screenshot 2026-05-09 at 12 35 02" src="https://github.com/user-attachments/assets/39e7d75d-e40c-4ac7-bfc5-aad489bd4860" />
 
 
-Dashboard Utama: Statistik real-time total rumah, hunian, dan saldo kas.
+Dashboard Utama: Data real-time total rumah, hunian, dan saldo kas.
 -
 <img width="1280" height="648" alt="Screenshot 2026-05-09 at 12 46 43" src="https://github.com/user-attachments/assets/1de0d316-3186-4632-a669-8ca752a4f048" />
 
