@@ -7,7 +7,7 @@ Email: ultravia914@gmail.com
 Dokumentasi Visual: https://canva.link/un6g44ogjpfmhw9
 
 [1] Daftar Isi
-
+-
 Prasyarat Sistem (Link Download)
 
 Langkah 1: Pengambilan Code (Clone)
@@ -23,7 +23,7 @@ Langkah 5: Menjalankan Aplikasi
 Struktur Database (ERD)
 
 Rangkuman Fitur (Screenshot)
--
+
 Prasyarat Sistem (Link Download)
 -
 Sebelum memulai instalasi, pastikan perangkat Anda sudah terinstall aplikasi berikut:
@@ -36,16 +36,16 @@ Node.js: https://nodejs.org/en/download
 
 XAMPP: https://www.apachefriends.org/download (Untuk MySQL)
 
-[3] Langkah 1: Pengambilan Code (Clone)
-
+Langkah 1: Pengambilan Code (Clone)
+-
 Buka terminal atau Command Prompt (CMD), lalu jalankan perintah berikut:
 
 git clone [https://github.com/ultraviany/SmartHousingArea](https://github.com/ultraviany/SmartHousingArea)
 cd SmartHousingArea
 
 
-[4] Langkah 2: Instalasi Backend (Laravel)
-
+Langkah 2: Instalasi Backend (Laravel)
+-
 Pindah ke folder backend untuk menginstall semua library yang dibutuhkan:
 
 cd backend
@@ -71,8 +71,8 @@ Generate Key Aplikasi:
 php artisan key:generate
 
 
-[5] Langkah 3: Konfigurasi Database & Migrasi
-
+Langkah 3: Konfigurasi Database & Migrasi
+-
 Jalankan XAMPP dan aktifkan modul Apache dan MySQL.
 
 Akses localhost/phpmyadmin di browser Anda.
@@ -84,8 +84,8 @@ Kembali ke terminal (masih di folder backend), jalankan perintah migrasi:
 php artisan migrate:fresh
 
 
-[6] Langkah 4: Instalasi Frontend (React + Vite)
-
+Langkah 4: Instalasi Frontend (React + Vite)
+-
 Buka terminal baru (tetap di folder utama project), lalu masuk ke folder frontend:
 
 cd frontend
@@ -99,8 +99,8 @@ sudo xattr -rd com.apple.quarantine .
 chmod -R +x node_modules/.bin/
 
 
-[7] Langkah 5: Menjalankan Aplikasi
-
+Langkah 5: Menjalankan Aplikasi
+-
 Buka dua terminal berbeda untuk menjalankan backend dan frontend secara bersamaan:
 
 Jalankan Backend (Terminal 1):
@@ -117,8 +117,8 @@ npm run dev
 
 Aplikasi frontend berjalan di: http://localhost:5173
 
-[8] Struktur Database (ERD)
-
+Struktur Database (ERD)
+-
 Sistem ini dirancang dengan struktur data yang mencakup:
 
 Users: Pengelolaan akun Administrator.
