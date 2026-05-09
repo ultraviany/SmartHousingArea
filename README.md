@@ -4,13 +4,13 @@ Project by: Ultra Viany
 
 Email: ultravia914@gmail.com
 
+Dokumentasi Visual: Lihat Presentasi di Canva
+
 📌 Daftar Isi
 
-Tentang Project
+Prasyarat Sistem (Link Download)
 
-Persiapan Perangkat (Environment)
-
-Langkah 1: Pengambilan Code
+Langkah 1: Pengambilan Code (Clone)
 
 Langkah 2: Instalasi Backend (Laravel)
 
@@ -22,27 +22,23 @@ Langkah 5: Menjalankan Aplikasi
 
 Struktur Database (ERD)
 
-Dokumentasi Fitur (Screenshot)
+Rangkuman Fitur (Screenshot)
 
-📖 Tentang Project
+💻 Prasyarat Sistem (Link Download)
 
-Smart Housing Area adalah aplikasi berbasis web yang dirancang untuk memodernisasi administrasi di lingkungan perumahan (RT). Aplikasi ini memisahkan antara Backend (menggunakan Laravel) dan Frontend (menggunakan React + Vite) untuk performa yang optimal.
+Sebelum memulai instalasi, pastikan perangkat Anda sudah terinstall aplikasi berikut:
 
-💻 Persiapan Perangkat (Environment)
+🛠️ Git: Download Git
 
-Pastikan perangkat Anda sudah terinstall software berikut:
+🐘 Composer: Download Composer
 
-Git: Untuk manajemen kode.
+🟢 Node.js: Download Node.js
 
-PHP (>= 8.1) & Composer: Untuk menjalankan Laravel.
+🧡 XAMPP: Download XAMPP (Untuk MySQL)
 
-Node.js (LTS) & NPM: Untuk menjalankan React.
+📂 Langkah 1: Pengambilan Code (Clone)
 
-MySQL (XAMPP): Sebagai sistem penyimpanan data (DBMS).
-
-📂 Langkah 1: Pengambilan Code
-
-Buka terminal atau Command Prompt (CMD) Anda, lalu jalankan perintah:
+Buka terminal atau Command Prompt (CMD), lalu jalankan perintah berikut:
 
 git clone [https://github.com/ultraviany/SmartHousingArea](https://github.com/ultraviany/SmartHousingArea)
 cd SmartHousingArea
@@ -50,17 +46,17 @@ cd SmartHousingArea
 
 ⚙️ Langkah 2: Instalasi Backend (Laravel)
 
-Masuk ke folder backend:
+Pindah ke folder backend untuk menginstall semua library yang dibutuhkan:
 
 cd backend
 composer install --ignore-platform-reqs
 
 
-Konfigurasi File .env:
+Pengaturan File .env:
 
-Salin file .env.example menjadi .env.
+Salin file .env.example dan ubah namanya menjadi .env.
 
-Buka file .env dan pastikan pengaturan database sesuai dengan MySQL Anda:
+Buka file .env dan sesuaikan pengaturan database Anda:
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -70,34 +66,34 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 
-Generate kunci aplikasi:
+Generate Key Aplikasi:
 
 php artisan key:generate
 
 
 🗄️ Langkah 3: Konfigurasi Database & Migrasi
 
-Buka phpMyAdmin melalui browser (localhost/phpmyadmin).
+Jalankan XAMPP dan aktifkan modul Apache dan MySQL.
 
-Buat database baru dengan nama: smarthousing.
+Akses localhost/phpmyadmin di browser Anda.
 
-Jalankan migrasi tabel secara otomatis melalui terminal:
+Buat database baru dengan nama smarthousing.
+
+Kembali ke terminal (masih di folder backend), jalankan perintah migrasi:
 
 php artisan migrate:fresh
 
 
-(Catatan: Jika terjadi error terkait "index length", limit panjang data sudah disesuaikan pada AppServiceProvider).
-
 🎨 Langkah 4: Instalasi Frontend (React + Vite)
 
-Buka terminal baru (tetap di folder project utama), lalu masuk ke folder frontend:
+Buka terminal baru (tetap di folder utama project), lalu masuk ke folder frontend:
 
 cd frontend
 npm install
 
 
-Catatan Khusus Pengguna macOS:
-Jika terjadi masalah izin (permission) pada folder node_modules, jalankan perintah berikut:
+💡 Tips Khusus macOS:
+Jika muncul error perizinan (permission), jalankan perintah berikut:
 
 sudo xattr -rd com.apple.quarantine .
 chmod -R +x node_modules/.bin/
@@ -105,54 +101,46 @@ chmod -R +x node_modules/.bin/
 
 🚀 Langkah 5: Menjalankan Aplikasi
 
-Pastikan MySQL di XAMPP sudah aktif (Running).
+Buka dua terminal berbeda untuk menjalankan backend dan frontend secara bersamaan:
 
-Jalankan Server Backend (di terminal backend):
+Jalankan Backend (Terminal 1):
 
 php artisan serve
 
 
-Server akan berjalan di: http://127.0.0.1:8000
+Aplikasi backend berjalan di: http://127.0.0.1:8000
 
-Jalankan Server Frontend (di terminal frontend):
+Jalankan Frontend (Terminal 2):
 
 npm run dev
 
 
-Aplikasi dapat diakses di browser melalui alamat yang muncul (biasanya: http://localhost:5173)
+Aplikasi frontend berjalan di: http://localhost:5173
 
 📊 Struktur Database (ERD)
 
-Sistem ini menggunakan struktur database relasional yang mencakup:
+Sistem ini dirancang dengan struktur data yang mencakup:
 
-Users: Data Admin/Pengelola.
+Users: Pengelolaan akun Administrator.
 
-Houses: Data properti (Nomor rumah & status).
+Houses: Data nomor rumah dan status hunian (Dihuni/Kosong).
 
-Residents: Detail penghuni (KTP, status huni, telepon).
+Residents: Informasi lengkap penghuni termasuk Foto KTP dan Status Huni.
 
-Payments: Pencatatan iuran (Satpam & Kebersihan).
+Payments: Pencatatan transaksi iuran warga (Satpam & Kebersihan).
 
-Expenses: Pencatatan pengeluaran kas RT.
+Expenses: Pencatatan pengeluaran operasional kas RT.
 
-(Lihat gambar ERD lengkap pada folder /assets atau file PPT).
+📸 Rangkuman Fitur (Screenshot)
 
-📸 Dokumentasi Fitur (Screenshot)
+Sesuai dengan dokumentasi pada presentasi, aplikasi ini memiliki fitur utama:
 
-1. Halaman Login & Register
+Halaman Login & Register: Autentikasi aman untuk admin.
 
-Sistem keamanan untuk masuk ke dashboard admin dan pendaftaran akun pengelola baru.
+Dashboard Utama: Statistik real-time total rumah, hunian, dan saldo kas.
 
-2. Dashboard Monitoring
+Manajemen Warga: Pendataan penduduk tetap maupun kontrak.
 
-Menampilkan ringkasan total rumah, jumlah rumah dihuni vs kosong, serta saldo kas RT secara real-time.
+Manajemen Iuran: Laporan pembayaran warga yang transparan.
 
-3. Manajemen Penghuni & Rumah
-
-Fitur untuk menambah, melihat, dan mengelola data warga serta status aset rumah perumahan.
-
-4. Transaksi Iuran & Pengeluaran
-
-Pencatatan pembayaran bulanan warga serta transparansi laporan pengeluaran dana kas.
-
-Presentasi Visual Lengkap (Canva): [Link Canva Anda Disini]
+Dokumentasi Lengkap: Presentasi Proyek di Canva
