@@ -29,63 +29,62 @@ Langkah Instalasi
 1. Clone Repository buka terminal atau Git Bash, lalu jalankan perintah berikut:
 
 git clone https://github.com/ultraviany/SmartHousingArea
-
 cd SmartHousingArea
 
 2. Istalasi Backend (Laravel)Masuk ke folder backend:
 
 cd backend
-
 composer install --ignore-platform-reqs
 
 Konfigurasi Environment (.env):  Salin file .env.example menjadi .env 
 Buka file .env dan sesuaikan konfigurasi database berikut:  
------------------------
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=smarthousing
 DB_USERNAME=root
 DB_PASSWORD=
------------------------
+
 
 Generate kunci aplikasi: 
---------------------------
 php artisan key:generate
---------------------------
+
 
 3. Konfigurasi Database & Migrasi
 Buka phpMyAdmin dan buat database baru dengan nama smarthousing.
 Jalankan migrasi untuk membentuk tabel:
---------------------------
+
 php artisan migrate:fresh
---------------------------
+
 Catatan: Jika terjadi error "index length", atur limit panjang data pada app/Providers/AppServiceProvider.php menjadi 191 karakter.
 
 4. Instalasi Frontend (React + Vite)Buka terminal baru, masuk ke folder frontend:
------------
+   
 cd frontend
------------
 npm install
----------------------------------------------------------------------------------------------------------------------
-Khusus pengguna macOS: Jika terjadi masalah izin (permission), jalankan perintah sudo xattr -rd com.apple.quarantine 
----------------------------------------------------------------------------------------------------------------------
+
+
+[ Khusus pengguna macOS: Jika terjadi masalah izin (permission), jalankan perintah sudo xattr -rd com.apple.quarantine ]
+
 
 -------------------------
-//// Menjalankan Aplikasi
+Menjalankan Aplikasi
 -------------------------
+
 Pastikan Apache dan MySQL di XAMPP sudah dalam status Running.  
 Jalankan Backend (di folder /backend): 
------------------
+
 php artisan serve
------------------
+
 Jalankan Frontend (di folder /frontend): 
------------
+
 npm run dev
------------
 
 
+--------------
 Database (ERD)Berikut adalah struktur tabel utama dalam sistem Smart Housing Area:  
+---------------
 Users: Data administrator 
 Houses: Data nomor rumah dan status hunian 
 Residents: Data detail penghuni (KTP, status, dll)
